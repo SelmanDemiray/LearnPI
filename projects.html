@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <script src="js/script.js" defer></script>
+    <script src="js/copy.js" defer></script>
     <!-- Structured data for projects page -->
     <script type="application/ld+json">
     {
@@ -82,10 +83,11 @@
         </div>
 
         <section class="projects">
+            <!-- Home Server -->
             <div id="homeserver" class="project-card" data-project="homeserver" data-tags="server advanced" tabindex="0" role="button" aria-pressed="false">
                 <h3>Home Server <span class="difficulty difficulty-advanced">Advanced</span></h3>
                 <div class="project-icon"><i class="fas fa-server" aria-hidden="true"></i></div>
-                <p>Turn your Raspberry Pi into a fully functional home server.</p>
+                <p>Transform your Raspberry Pi into a powerful home server for file sharing, backups, and running open-source apps. All setup scripts and Docker configurations are available for free on GitHub.</p>
                 <div class="project-tags">
                     <span class="project-tag">Server</span>
                     <span class="project-tag">Advanced</span>
@@ -93,10 +95,11 @@
                 <button class="project-btn">Learn More</button>
             </div>
 
+            <!-- Media Centre -->
             <div id="mediacentre" class="project-card" data-project="mediacentre" data-tags="media beginner" tabindex="0" role="button" aria-pressed="false">
                 <h3>Media Centre <span class="difficulty difficulty-beginner">Beginner</span></h3>
                 <div class="project-icon"><i class="fas fa-tv" aria-hidden="true"></i></div>
-                <p>Create your own media streaming system with Kodi.</p>
+                <p>Build a slick media streamer with Kodi or Jellyfin. All software is open-source and the code/configs are on GitHub for free.</p>
                 <div class="project-tags">
                     <span class="project-tag">Media</span>
                     <span class="project-tag">Beginner</span>
@@ -104,10 +107,11 @@
                 <button class="project-btn">Learn More</button>
             </div>
 
+            <!-- Retro Gaming Console -->
             <div id="retrogaming" class="project-card" data-project="retrogaming" data-tags="media beginner" tabindex="0" role="button" aria-pressed="false">
                 <h3>Retro Gaming Console <span class="difficulty difficulty-beginner">Beginner</span></h3>
                 <div class="project-icon"><i class="fas fa-gamepad" aria-hidden="true"></i></div>
-                <p>Play classic games using RetroPie or Recalbox.</p>
+                <p>Play classic games using RetroPie or Recalbox. All emulators and setup scripts are open source and hosted on GitHub for free.</p>
                 <div class="project-tags">
                     <span class="project-tag">Media</span>
                     <span class="project-tag">Beginner</span>
@@ -115,10 +119,11 @@
                 <button class="project-btn">Learn More</button>
             </div>
 
+            <!-- Home Automation Hub -->
             <div id="homeautomation" class="project-card" data-project="homeautomation" data-tags="iot advanced" tabindex="0" role="button" aria-pressed="false">
                 <h3>Home Automation Hub <span class="difficulty difficulty-advanced">Advanced</span></h3>
                 <div class="project-icon"><i class="fas fa-home" aria-hidden="true"></i></div>
-                <p>Control smart devices with Home Assistant or similar platforms.</p>
+                <p>Control lights, sensors, and smart home devices with Home Assistant. All automation code and integrations are open source on GitHub for free.</p>
                 <div class="project-tags">
                     <span class="project-tag">IoT & Home</span>
                     <span class="project-tag">Advanced</span>
@@ -126,10 +131,11 @@
                 <button class="project-btn">Learn More</button>
             </div>
 
+            <!-- Pi-hole -->
             <div id="pihole" class="project-card" data-project="pihole" data-tags="server beginner" tabindex="0" role="button" aria-pressed="false">
                 <h3>Network-Wide Ad Blocker <span class="difficulty difficulty-beginner">Beginner</span></h3>
                 <div class="project-icon"><i class="fas fa-ban" aria-hidden="true"></i></div>
-                <p>Block ads across all devices with Pi-hole.</p>
+                <p>Block ads and trackers for your entire network with Pi-hole. The whole source code and setup instructions are free on GitHub.</p>
                 <div class="project-tags">
                     <span class="project-tag">Server</span>
                     <span class="project-tag">Beginner</span>
@@ -137,10 +143,11 @@
                 <button class="project-btn">Learn More</button>
             </div>
 
+            <!-- Weather Station -->
             <div id="weatherstation" class="project-card" data-project="weatherstation" data-tags="iot beginner" tabindex="0" role="button" aria-pressed="false">
                 <h3>Weather Station <span class="difficulty difficulty-beginner">Beginner</span></h3>
                 <div class="project-icon"><i class="fas fa-cloud-sun" aria-hidden="true"></i></div>
-                <p>Build a weather monitoring station with sensors.</p>
+                <p>Monitor temperature, humidity, and air pressure with sensors and visualize it using open-source tools like Grafana. All code and dashboards are free on GitHub!</p>
                 <div class="project-tags">
                     <span class="project-tag">IoT & Home</span>
                     <span class="project-tag">Beginner</span>
@@ -148,10 +155,11 @@
                 <button class="project-btn">Learn More</button>
             </div>
 
+            <!-- VPN Server -->
             <div id="vpn" class="project-card" data-project="vpn" data-tags="server advanced" tabindex="0" role="button" aria-pressed="false">
                 <h3>Personal VPN Server <span class="difficulty difficulty-advanced">Advanced</span></h3>
                 <div class="project-icon"><i class="fas fa-shield-alt" aria-hidden="true"></i></div>
-                <p>Set up your own VPN server for secure browsing from anywhere.</p>
+                <p>Set up your own secure VPN using WireGuard or OpenVPN. All setup scripts are open source and free on GitHub.</p>
                 <div class="project-tags">
                     <span class="project-tag">Server</span>
                     <span class="project-tag">Advanced</span>
@@ -159,10 +167,11 @@
                 <button class="project-btn">Learn More</button>
             </div>
 
+            <!-- Security Camera -->
             <div id="securitycam" class="project-card" data-project="securitycam" data-tags="iot advanced" tabindex="0" role="button" aria-pressed="false">
                 <h3>Security Camera <span class="difficulty difficulty-advanced">Advanced</span></h3>
                 <div class="project-icon"><i class="fas fa-video" aria-hidden="true"></i></div>
-                <p>Build a home security camera with motion detection.</p>
+                <p>Turn your Pi into a motion-detecting security camera with MotionEye. All the software and configs are open source on GitHub, free to use and modify!</p>
                 <div class="project-tags">
                     <span class="project-tag">IoT & Home</span>
                     <span class="project-tag">Advanced</span>
@@ -170,7 +179,6 @@
                 <button class="project-btn">Learn More</button>
             </div>
         </section>
-    </main>
 
     <!-- Modal Popup for Projects with improved accessibility -->
     <div id="projectModal" class="modal" role="dialog" aria-modal="true" aria-labelledby="modal-title" aria-hidden="true">
@@ -195,148 +203,178 @@
         <div id="homeserver-details">
             <h2>Home Server with Raspberry Pi 4B</h2>
             <ol>
-                <li>Install Raspberry Pi OS Lite on your SD card</li>
-                <li>Enable SSH: create an empty file named <code>ssh</code> in the boot partition</li>
-                <li>Boot Pi, SSH in: <code>ssh pi@&lt;pi-ip&gt;</code> (default password: <code>raspberry</code>)</li>
-                <li>Update system:
-                    <pre><code>sudo apt update && sudo apt upgrade -y</code></pre>
+                <li><strong>Flash Raspberry Pi OS Lite</strong> to your SD card using Raspberry Pi Imager.</li>
+                <li><strong>Enable SSH:</strong> Place an empty file named <code>ssh</code> in the boot partition.</li>
+                <li><strong>Boot & Connect:</strong> Insert SD, power up, and SSH in: <code>ssh pi@&lt;pi-ip&gt;</code> (default password: <code>raspberry</code>).</li>
+                <li><strong>Update system:</strong>
+                    <pre><code>sudo apt update && sudo apt upgrade -y</code><button class="copy-btn" aria-label="Copy code">Copy</button></pre>
                 </li>
-                <li>Install Docker:
+                <li><strong>Install Docker:</strong>
                     <pre><code>curl -fsSL https://get.docker.com | sh
-sudo usermod -aG docker pi
-</code></pre>
+sudo usermod -aG docker pi</code><button class="copy-btn" aria-label="Copy code">Copy</button></pre>
                 </li>
-                <li>Clone OpenMediaVault Docker repo:
-                    <pre><code>git clone https://github.com/whitechip/volumio-docker.git
-cd volumio-docker
-docker-compose up -d
-</code></pre>
+                <li><strong>Clone a server stack from GitHub and launch with Docker Compose:</strong>
+                    <pre><code>git clone https://github.com/nextcloud/all-in-one.git
+cd all-in-one
+docker compose up -d</code><button class="copy-btn" aria-label="Copy code">Copy</button></pre>
                 </li>
-                <li>Access Web UI at <code>http://&lt;pi-ip&gt;:9000</code> to manage shares</li>
+                <li><strong>Access the Web UI</strong> (see project README) to manage your server apps.</li>
+                <li><strong>Reset/Remove:</strong> To stop and remove all containers and data:
+                    <pre><code>docker compose down -v
+cd ..
+rm -rf all-in-one</code><button class="copy-btn" aria-label="Copy code">Copy</button></pre>
+                </li>
             </ol>
-            <p>Repo: <a href="https://github.com/whitechip/volumio-docker" target="_blank" rel="noopener">volumio‑docker</a></p>
+            <p><strong>All code and instructions are open source and free on GitHub! Explore, fork, and contribute.</strong></p>
+            <p>Example repo: <a href="https://github.com/nextcloud/all-in-one" target="_blank" rel="noopener">nextcloud/all-in-one</a></p>
         </div>
 
         <!-- Media Centre Details -->
         <div id="mediacentre-details">
-            <h2>Media Centre with LibreELEC (Kodi)</h2>
+            <h2>Media Centre with LibreELEC (Kodi) or Jellyfin</h2>
             <ol>
-                <li>Download LibreELEC image from <a href="https://github.com/LibreELEC/LibreELEC.tv" target="_blank" rel="noopener">LibreELEC GitHub</a></li>
-                <li>Flash it with Raspberry Pi Imager</li>
-                <li>Boot Pi, complete on‑screen setup</li>
-                <li>Enable SSH via Settings → Services</li>
-                <li>Install addons via Kodi Add‑on repository</li>
+                <li><strong>Download</strong> <a href="https://github.com/LibreELEC/LibreELEC.tv" target="_blank" rel="noopener">LibreELEC</a> or <a href="https://github.com/jellyfin/jellyfin" target="_blank" rel="noopener">Jellyfin</a> from GitHub.</li>
+                <li><strong>Flash the image</strong> with Raspberry Pi Imager to your SD card.</li>
+                <li><strong>Boot your Pi</strong> and follow the on‑screen setup wizard.</li>
+                <li><strong>Enable SSH</strong> via Settings → Services (for remote config).</li>
+                <li><strong>Install add-ons (Kodi)</strong> or connect clients (Jellyfin) using the Web UI.</li>
+                <li><strong>Reset:</strong> To start over, re-flash your SD card with a fresh image using Raspberry Pi Imager.</li>
             </ol>
-            <p>GitHub: <a href="https://github.com/LibreELEC/LibreELEC.tv" target="_blank" rel="noopener">LibreELEC.tv</a></p>
+            <p><strong>All source code, add-ons, and guides are free and open on GitHub!</strong></p>
+            <p>Repos: <a href="https://github.com/LibreELEC/LibreELEC.tv" target="_blank" rel="noopener">LibreELEC.tv</a> | <a href="https://github.com/jellyfin/jellyfin" target="_blank" rel="noopener">Jellyfin</a></p>
         </div>
 
         <!-- Retro Gaming Details -->
         <div id="retrogaming-details">
-            <h2>Retro Gaming Console with RetroPie</h2>
+            <h2>Retro Gaming Console with RetroPie or Recalbox</h2>
             <ol>
-                <li>Download RetroPie image from <a href="https://github.com/RetroPie/RetroPie-Setup" target="_blank" rel="noopener">RetroPie-Setup</a></li>
-                <li>Flash with Raspberry Pi Imager</li>
-                <li>Boot Pi, run first‑time wizard</li>
-                <li>Configure controllers when prompted</li>
-                <li>Use USB stick to transfer ROMs into <code>/home/pi/RetroPie/roms</code></li>
-                <li>Reboot and select your game system</li>
+                <li><strong>Download</strong> <a href="https://github.com/RetroPie/RetroPie-Setup" target="_blank" rel="noopener">RetroPie</a> or <a href="https://github.com/recalbox/recalbox" target="_blank" rel="noopener">Recalbox</a> from GitHub.</li>
+                <li><strong>Flash to SD card</strong> and insert into your Pi.</li>
+                <li><strong>Boot and run the setup wizard</strong> to configure controllers.</li>
+                <li><strong>Transfer ROMs</strong> (games) to <code>/home/pi/RetroPie/roms</code> via USB/network.</li>
+                <li><strong>Reboot</strong> and select your game system from the menu.</li>
+                <li><strong>Reset:</strong> To wipe all games and configs, re-flash the SD card with a fresh image.</li>
             </ol>
-            <p>GitHub: <a href="https://github.com/RetroPie/RetroPie-Setup" target="_blank" rel="noopener">RetroPie‑Setup</a></p>
+            <p><strong>All emulators and scripts are open source on GitHub. Join the community for support and mods!</strong></p>
+            <p>Repos: <a href="https://github.com/RetroPie/RetroPie-Setup" target="_blank" rel="noopener">RetroPie‑Setup</a> | <a href="https://github.com/recalbox/recalbox" target="_blank" rel="noopener">Recalbox</a></p>
         </div>
 
         <!-- Home Automation Details -->
         <div id="homeautomation-details">
             <h2>Home Automation Hub with Home Assistant</h2>
             <ol>
-                <li>Flash Home Assistant OS image: <a href="https://github.com/home-assistant/operating-system" target="_blank" rel="noopener">HA OS</a></li>
-                <li>Boot Pi, wait ~20 min for first install</li>
-                <li>Open <code>http://&lt;pi-ip&gt;:8123</code>, create account</li>
-                <li>Install integrations via UI (e.g., Z‑Wave, MQTT)</li>
-                <li>Use YAML Editor add‑on to tweak <code>configuration.yaml</code></li>
+                <li><strong>Flash</strong> <a href="https://github.com/home-assistant/operating-system" target="_blank" rel="noopener">Home Assistant OS</a> to your SD card.</li>
+                <li><strong>Boot and wait</strong> ~20 min for first setup (all code and docs on GitHub).</li>
+                <li><strong>Open</strong> <code>http://&lt;pi-ip&gt;:8123</code> and create your account.</li>
+                <li><strong>Install integrations</strong> (Z‑Wave, Zigbee, MQTT, etc.) through the UI.</li>
+                <li><strong>Customize automations</strong> and dashboards as you like.</li>
+                <li><strong>Reset:</strong> Re-flash the SD card to start fresh, or use the "Wipe Data" option in the Supervisor panel.</li>
             </ol>
-            <p>GitHub: <a href="https://github.com/home-assistant/operating-system" target="_blank" rel="noopener">operating‑system</a></p>
+            <p><strong>All automations, add-ons, and integrations are open source and free on GitHub.</strong></p>
+            <p>Repo: <a href="https://github.com/home-assistant/operating-system" target="_blank" rel="noopener">home-assistant/operating-system</a></p>
         </div>
 
         <!-- Pi-hole Details -->
         <div id="pihole-details">
             <h2>Network‑Wide Ad Blocker with Pi‑hole</h2>
             <ol>
-                <li>Install Raspberry Pi OS Lite, update system</li>
-                <li>Run installer:
-                    <pre><code>curl -sSL https://install.pi-hole.net | bash</code></pre>
+                <li><strong>Install Raspberry Pi OS Lite</strong> and update system.</li>
+                <li><strong>Install Pi-hole:</strong>
+                    <pre><code>curl -sSL https://install.pi-hole.net | bash</code><button class="copy-btn" aria-label="Copy code">Copy</button></pre>
                 </li>
-                <li>Follow prompts to set up blocking and web admin</li>
-                <li>Point your router’s DNS to Pi’s IP</li>
-                <li>Log into <code>http://&lt;pi-ip&gt;/admin</code> to view stats</li>
+                <li><strong>Follow prompts</strong> for setup and web admin.</li>
+                <li><strong>Point your router’s DNS</strong> to your Pi’s IP address.</li>
+                <li><strong>Access stats</strong> at <code>http://&lt;pi-ip&gt;/admin</code>.</li>
+                <li><strong>Reset/Remove:</strong> Uninstall Pi-hole and clean up:
+                    <pre><code>sudo pihole uninstall
+sudo apt purge pihole -y
+sudo apt autoremove -y</code><button class="copy-btn" aria-label="Copy code">Copy</button></pre>
+                </li>
             </ol>
-            <p>Repo: <a href="https://github.com/pi-hole/pi-hole" target="_blank" rel="noopener">pi-hole</a></p>
+            <p><strong>Source code, blocklists, and web UI are open source and on GitHub, 100% free!</strong></p>
+            <p>Repo: <a href="https://github.com/pi-hole/pi-hole" target="_blank" rel="noopener">pi-hole/pi-hole</a></p>
         </div>
 
         <!-- Weather Station Details -->
         <div id="weatherstation-details">
             <h2>Weather Station with BME280 & Grafana</h2>
             <ol>
-                <li>Enable I²C: <code>sudo raspi-config</code> → Interface ≥I²C</li>
-                <li>Install sensor libs:
-                    <pre><code>pip3 install adafruit-circuitpython-bme280</code></pre>
+                <li><strong>Enable I²C:</strong> <code>sudo raspi-config</code> → Interface → I²C.</li>
+                <li><strong>Install sensor libraries:</strong>
+                    <pre><code>pip3 install adafruit-circuitpython-bme280</code><button class="copy-btn" aria-label="Copy code">Copy</button></pre>
                 </li>
-                <li>Clone example script:
-                    <pre><code>git clone https://github.com/adafruit/Adafruit_CircuitPython_BME280.git
-</code></pre>
+                <li><strong>Clone example scripts:</strong>
+                    <pre><code>git clone https://github.com/adafruit/Adafruit_CircuitPython_BME280.git</code><button class="copy-btn" aria-label="Copy code">Copy</button></pre>
                 </li>
-                <li>Run <code>examples/bme280_simpletest.py</code></li>
-                <li>Install InfluxDB & Grafana via Docker:
+                <li><strong>Run test script:</strong> <code>python3 examples/bme280_simpletest.py</code></li>
+                <li><strong>Install InfluxDB & Grafana:</strong>
                     <pre><code>docker run -d --name influx -p 8086:8086 influxdb
-docker run -d --name grafana -p 3000:3000 grafana/grafana</code></pre>
+docker run -d --name grafana -p 3000:3000 grafana/grafana</code><button class="copy-btn" aria-label="Copy code">Copy</button></pre>
+                </li>
+                <li><strong>Reset/Remove:</strong> To remove containers and data:
+                    <pre><code>docker stop influx grafana
+docker rm influx grafana
+docker volume prune -f</code><button class="copy-btn" aria-label="Copy code">Copy</button></pre>
                 </li>
             </ol>
-            <p>Repo: <a href="https://github.com/adafruit/Adafruit_CircuitPython_BME280" target="_blank" rel="noopener">CircuitPython BME280</a></p>
+            <p><strong>All code, libraries, and dashboards are open source and free on GitHub.</strong></p>
+            <p>Repo: <a href="https://github.com/adafruit/Adafruit_CircuitPython_BME280" target="_blank" rel="noopener">Adafruit_CircuitPython_BME280</a></p>
         </div>
 
         <!-- VPN Server Details -->
         <div id="vpn-details">
             <h2>Personal VPN Server with WireGuard</h2>
             <ol>
-                <li>Install Raspberry Pi OS Lite, update system</li>
-                <li>Install WireGuard:
-                    <pre><code>sudo apt install wireguard -y</code></pre>
+                <li><strong>Install Raspberry Pi OS Lite</strong> and update the system.</li>
+                <li><strong>Install WireGuard:</strong>
+                    <pre><code>sudo apt install wireguard -y</code><button class="copy-btn" aria-label="Copy code">Copy</button></pre>
                 </li>
-                <li>Generate keys:
-                    <pre><code>wg genkey | tee key.priv | wg pubkey > key.pub</code></pre>
+                <li><strong>Generate keys:</strong>
+                    <pre><code>wg genkey | tee key.priv | wg pubkey > key.pub</code><button class="copy-btn" aria-label="Copy code">Copy</button></pre>
                 </li>
-                <li>Clone setup script:
+                <li><strong>Clone installer from GitHub:</strong>
                     <pre><code>git clone https://github.com/angristan/wireguard-install.git
 cd wireguard-install
-sudo bash wireguard-install.sh
-</code></pre>
+sudo bash wireguard-install.sh</code><button class="copy-btn" aria-label="Copy code">Copy</button></pre>
                 </li>
-                <li>Follow interactive prompts, then import conf on client device</li>
+                <li><strong>Follow prompts</strong> and import the config on your client device.</li>
+                <li><strong>Reset/Remove:</strong> To remove WireGuard:
+                    <pre><code>sudo apt purge wireguard -y
+sudo rm -rf /etc/wireguard
+cd ..
+rm -rf wireguard-install</code><button class="copy-btn" aria-label="Copy code">Copy</button></pre>
+                </li>
             </ol>
-            <p>Repo: <a href="https://github.com/angristan/wireguard-install" target="_blank" rel="noopener">wireguard-install</a></p>
+            <p><strong>Every line of code and setup script is open source and free on GitHub!</strong></p>
+            <p>Repo: <a href="https://github.com/angristan/wireguard-install" target="_blank" rel="noopener">angristan/wireguard-install</a></p>
         </div>
 
         <!-- Security Camera Details -->
         <div id="securitycam-details">
             <h2>Security Camera with MotionEye</h2>
             <ol>
-                <li>Install dependencies:
+                <li><strong>Install dependencies:</strong>
                     <pre><code>sudo apt update
-sudo apt install python3-pip python3-dev libssl-dev libcurl4-openssl-dev libjpeg-dev -y</code></pre>
+sudo apt install python3-pip python3-dev libssl-dev libcurl4-openssl-dev libjpeg-dev -y</code><button class="copy-btn" aria-label="Copy code">Copy</button></pre>
                 </li>
-                <li>Install MotionEye:
-                    <pre><code>pip3 install motioneye</code></pre>
+                <li><strong>Install MotionEye:</strong>
+                    <pre><code>pip3 install motioneye</code><button class="copy-btn" aria-label="Copy code">Copy</button></pre>
                 </li>
-                <li>Initialize:
+                <li><strong>Initialize configs:</strong>
                     <pre><code>sudo mkdir -p /etc/motioneye
-sudo cp /usr/local/share/motioneye/extra/motioneye.conf.sample /etc/motioneye/motioneye.conf
-</code></pre>
+sudo cp /usr/local/share/motioneye/extra/motioneye.conf.sample /etc/motioneye/motioneye.conf</code><button class="copy-btn" aria-label="Copy code">Copy</button></pre>
                 </li>
-                <li>Start service:
-                    <pre><code>sudo meyectl startserver -b</code></pre>
+                <li><strong>Start the service:</strong>
+                    <pre><code>sudo meyectl startserver -b</code><button class="copy-btn" aria-label="Copy code">Copy</button></pre>
                 </li>
-                <li>Access <code>http://&lt;pi-ip&gt;:8765</code>, default admin/admin</li>
+                <li><strong>Access the web UI</strong> at <code>http://&lt;pi-ip&gt;:8765</code> (default admin/admin).</li>
+                <li><strong>Reset/Remove:</strong> To uninstall and remove configs:
+                    <pre><code>pip3 uninstall motioneye
+sudo rm -rf /etc/motioneye /var/lib/motioneye</code><button class="copy-btn" aria-label="Copy code">Copy</button></pre>
+                </li>
             </ol>
-            <p>Repo: <a href="https://github.com/ccrisan/motioneye" target="_blank" rel="noopener">motioneye</a></p>
+            <p><strong>All software, configs, and community tips are on GitHub and free to use/modify!</strong></p>
+            <p>Repo: <a href="https://github.com/ccrisan/motioneye" target="_blank" rel="noopener">ccrisan/motioneye</a></p>
         </div>
 
     </div>
