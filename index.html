@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Complete setup guide and project ideas for Raspberry Pi 4B">
+    <title>Raspberry Pi 4B Setup Guide</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <script src="js/script.js" defer></script>
+    <!-- Structured data for SEO -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "HowTo",
+      "name": "Raspberry Pi 4B Setup Guide",
+      "description": "Complete guide to setting up your Raspberry Pi 4B",
+      "step": [
+        {
+          "@type": "HowToStep",
+          "name": "Prepare Your SD Card",
+          "url": "#step1"
+        },
+        {
+          "@type": "HowToStep",
+          "name": "Connect Hardware",
+          "url": "#step2"
+        },
+        {
+          "@type": "HowToStep",
+          "name": "Initial Configuration",
+          "url": "#step3"
+        },
+        {
+          "@type": "HowToStep",
+          "name": "Enable Remote Access",
+          "url": "#step4"
+        },
+        {
+          "@type": "HowToStep",
+          "name": "Overclocking",
+          "url": "#step5"
+        }
+      ]
+    }
+    </script>
+</head>
+<body>
+    <a href="#main" class="skip-link">Skip to main content</a>
+    
+    <header role="banner">
+        <div class="container">
+            <h1><i class="fab fa-raspberry-pi" aria-hidden="true"></i> Raspberry Pi 4B Guide</h1>
+            <nav role="navigation" aria-label="Main navigation">
+                <ul>
+                    <li><a href="index.html" class="active" aria-current="page">Setup Guide</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                    <button id="theme-toggle" class="theme-toggle" aria-label="Toggle Dark Mode">
+                        <i class="fas fa-moon" aria-hidden="true"></i>
+                    </button>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main id="main" class="container" role="main">
+        <nav aria-label="Breadcrumb">
+            <ol class="breadcrumbs">
+                <li><a href="index.html">Home</a></li>
+                <li>Setup Guide</li>
+            </ol>
+        </nav>
+
+        <section class="hero" aria-labelledby="main-heading">
+            <h2 id="main-heading">Complete Raspberry Pi 4B Setup Guide</h2>
+            <p>Everything you need to know to get started with your Raspberry Pi 4B</p>
+        </section>
+
+        <section class="toc" aria-labelledby="toc-heading">
+            <h3 id="toc-heading">Table of Contents</h3>
+            <ul>
+                <li><a href="#requirements">What You'll Need</a></li>
+                <li><a href="#step1">Step 1: Prepare Your SD Card</a></li>
+                <li><a href="#step2">Step 2: Connect Hardware</a></li>
+                <li><a href="#step3">Step 3: Initial Configuration</a></li>
+                <li><a href="#step4">Step 4: Enable Remote Access</a></li>
+                <li><a href="#step5">Step 5: Overclocking</a></li>
+                <li><a href="#troubleshooting">Common Troubleshooting</a></li>
+            </ul>
+        </section>
+
+        <section class="setup-guide">
+            <div id="requirements" class="card">
+                <h3>What You'll Need</h3>
+                <ul>
+                    <li><strong>Raspberry Pi 4B:</strong> The mini-computer itself.</li>
+                    <li><strong>microSD card:</strong> At least 16GB, Class 10 or faster recommended. This acts as the Pi's hard drive.</li>
+                    <li><strong>Power supply:</strong> Official USB-C, 5V 3A power supply is highly recommended to avoid power issues.</li>
+                    <li><strong>HDMI cable:</strong> A micro-HDMI to standard HDMI cable to connect to a monitor. The Pi 4B has two micro-HDMI ports.</li>
+                    <li><strong>Keyboard and mouse:</strong> Standard USB keyboard and mouse for initial setup.</li>
+                    <li><strong>Monitor or TV:</strong> Any display with an HDMI input.</li>
+                    <li><strong>Computer with SD card reader:</strong> To write the operating system onto the microSD card.</li>
+                    <li><strong>Internet connection:</strong> Ethernet cable or WiFi access for updates and software installation.</li>
+                    <li><em>Optional:</em> Case for the Pi, heatsinks for cooling.</li>
+                </ul>
+            </div>
+
+            <div id="step1" class="card">
+                <h3>Step 1: Prepare Your SD Card (Install the OS)</h3>
+                <p>The microSD card stores the Raspberry Pi's operating system (OS) and your files. You need to install an OS image onto it using another computer.</p>
+                <ol>
+                    <li>Download the official <a href="https://www.raspberrypi.org/software/" target="_blank" rel="noopener">Raspberry Pi Imager</a> software for your computer (Windows, macOS, or Linux). This tool makes installing the OS easy.</li>
+                    <li>Insert your microSD card into your computer's SD card reader. Use a reliable reader to avoid data corruption.</li>
+                    <li>Open Raspberry Pi Imager. Click "Choose OS" and select an operating system. "Raspberry Pi OS (32-bit)" with desktop is recommended for beginners. "Lite" versions have no graphical interface and are for more advanced users.</li>
+                    <li>Click "Choose Storage" and select your microSD card. <strong>Be careful to select the correct drive!</strong></li>
+                    <li><em>Optional (Headless Setup):</em> Before clicking Write, click the gear icon for advanced options. Here you can enable SSH, set a hostname, configure WiFi, and set the username/password (changing the default 'pi' user is recommended for security).</li>
+                    <li>Click "Write". This will erase the SD card and install the chosen OS. It may take several minutes.</li>
+                </ol>
+                <div class="info">
+                    <i class="fas fa-info-circle" aria-hidden="true"></i> <strong>Headless Setup:</strong> If you don't have a spare monitor/keyboard, enabling SSH in the Imager's advanced options allows you to control the Pi remotely over the network from another computer right after the first boot.
+                </div>
+            </div>
+
+            <div id="step2" class="card">
+                <h3>Step 2: Connect Hardware</h3>
+                <p>Now it's time to assemble your Raspberry Pi setup.</p>
+                <ol>
+                    <li>Carefully insert the prepared microSD card into the slot on the underside of the Raspberry Pi until it clicks in place.</li>
+                    <li>Connect your USB keyboard and mouse to any of the USB ports (blue ports are faster USB 3.0, black are USB 2.0).</li>
+                    <li>Connect the micro-HDMI cable from the Pi to your monitor. Use the port labeled HDMI0 (closest to the USB-C power port) first.</li>
+                    <li>If using a wired internet connection, plug the Ethernet cable into the Pi's Ethernet port and your router/switch.</li>
+                    <li><strong>Finally, connect the USB-C power supply to the Pi.</strong> The Pi will automatically boot up as soon as power is connected.</li>
+                </ol>
+                <p>You should see activity on the monitor shortly after plugging in the power.</p>
+            </div>
+
+            <div id="step3" class="card">
+                <h3>Step 3: Initial Configuration (First Boot)</h3>
+                <p>When the Pi boots for the first time with a desktop OS, it will guide you through some initial settings.</p>
+                <ol>
+                    <li>Follow the on-screen setup wizard.</li>
+                    <li><strong>Set your Country, Language, and Timezone:</strong> This ensures your keyboard layout and clock are correct.</li>
+                    <li><strong>Change the Password:</strong> You'll be prompted to change the default password for the 'pi' user. Choose a strong, unique password. This is crucial for security.</li>
+                    <li><strong>Connect to WiFi:</strong> Select your WiFi network and enter the password if you didn't pre-configure it in the Imager and aren't using Ethernet.</li>
+                    <li><strong>Update Software:</strong> The wizard will ask if you want to check for updates. It's highly recommended to do this. Updates provide the latest features, bug fixes, and security patches. This can also be done later in the terminal with: <br><code>sudo apt update && sudo apt full-upgrade -y</code></li>
+                    <li>Restart the Pi if prompted after updates.</li>
+                </ol>
+                <p>Your Raspberry Pi is now set up and ready to use!</p>
+            </div>
+
+            <div id="step4" class="card">
+                <h3>Step 4: Enable Remote Access (Optional but Recommended)</h3>
+                <p>Remote access allows you to control your Pi from another computer without needing a dedicated monitor and keyboard connected to it.</p>
+                <ol>
+                    <li>Open the main menu (Raspberry icon) -> Preferences -> Raspberry Pi Configuration, OR open a terminal window and type <code>sudo raspi-config</code>.</li>
+                    <li>Navigate to the "Interfaces" tab or menu option.</li>
+                    <li><strong>Enable SSH:</strong> Secure Shell (SSH) allows you to access the Pi's command line remotely. Select SSH and choose "Enable".</li>
+                    <li><strong>Enable VNC (Optional):</strong> Virtual Network Computing (VNC) allows you to see and control the Pi's graphical desktop remotely. Select VNC and choose "Enable".</li>
+                    <li>Find your Pi's IP address. Open a terminal and type: <code>hostname -I</code>. Note down the address shown (e.g., 192.168.1.15).</li>
+                    <li>You can now connect from another computer on the same network using an SSH client (like PuTTY on Windows, or Terminal on macOS/Linux) with <code>ssh pi@&lt;pi-ip-address&gt;</code> or a VNC viewer.</li>
+                </ol>
+            </div>
+
+            <div id="step5" class="card">
+                <h3>Step 5: Overclocking (Advanced & Optional)</h3>
+                <p>Overclocking runs the Pi's processor faster than its default speed for potentially better performance, but it comes with risks.</p>
+                <ol>
+                    <li><strong>Ensure Proper Cooling:</strong> Overclocking generates more heat. You MUST have adequate cooling (at least heatsinks, preferably a fan) to prevent overheating, instability, and potential damage.</li>
+                    <li>Open Raspberry Pi Configuration: <code>sudo raspi-config</code> in the terminal.</li>
+                    <li>Navigate to "Performance Options" -> "Overclock".</li>
+                    <li>Read the warning carefully. Select a modest preset to start (e.g., "Medium" or "High"). Avoid "Turbo" unless you have excellent cooling and understand the risks.</li>
+                    <li>The tool may adjust voltage automatically (over_voltage setting).</li>
+                    <li>Reboot your Pi for the changes to take effect.</li>
+                    <li>Monitor temperatures closely using the command: <code>vcgencmd measure_temp</code>. If temperatures exceed 80-85°C under load, reduce or remove the overclock.</li>
+                    <li>Test stability by running demanding tasks. If the Pi crashes or behaves erratically, reduce the overclock settings.</li>
+                </ol>
+                <div class="warning">
+                    <i class="fas fa-exclamation-triangle" aria-hidden="true"></i> <strong>Warning:</strong> Overclocking can lead to system instability, data corruption, reduce the lifespan of your Pi, and may void the warranty. Proceed with caution and only if you have adequate cooling.
+                </div>
+            </div>
+        </section>
+
+        <section id="troubleshooting" class="troubleshooting">
+            <h2>Common Troubleshooting Tips</h2>
+            
+            <div class="card">
+                <h3>Pi Won't Boot / No Display</h3>
+                <ul>
+                    <li><strong>Check Power:</strong> Ensure you're using the official 5V 3A USB-C power supply. Insufficient power is a common issue.</li>
+                    <li><strong>SD Card:</strong> Re-seat the SD card. Try re-flashing the OS using Raspberry Pi Imager. Try a different, known-good SD card.</li>
+                    <li><strong>HDMI Cable/Port:</strong> Ensure the micro-HDMI cable is fully plugged in on both ends. Try the other micro-HDMI port on the Pi (HDMI1). Test the cable/monitor with another device.</li>
+                    <li><strong>Power LED:</strong> Check if the red power LED on the Pi is solidly lit. If it's blinking or off, it indicates a power issue. The green activity LED should blink during boot.</li>
+                    <li><strong>Safe Mode:</strong> Edit `config.txt` on the SD card's boot partition (using another computer) and add the line `hdmi_safe=1`. This forces basic HDMI settings.</li>
+                </ul>
+            </div>
+            
+            <div class="card">
+                <h3>WiFi Connection Issues</h3>
+                <ul>
+                    <li><strong>Password:</strong> Double-check the WiFi password for typos.</li>
+                    <li><strong>Country Code:</strong> Ensure the correct WiFi country is set in Raspberry Pi Configuration (Localisation Options) or `raspi-config`. This affects which channels are available.</li>
+                    <li><strong>Signal Strength:</strong> Move the Pi closer to the WiFi router.</li>
+                    <li><strong>Router Settings:</strong> Check if your router has MAC address filtering enabled or other restrictions.</li>
+                    <li><strong>Headless Config:</strong> If setting up WiFi via `wpa_supplicant.conf` for headless setup, ensure the file format, network name (SSID), and password are exactly correct and saved in the `/boot` partition before the first boot.</li>
+                </ul>
+            </div>
+            
+            <div class="card">
+                <h3>Keyboard/Mouse Not Working</h3>
+                <ul>
+                    <li><strong>Connections:</strong> Ensure keyboard and mouse are securely plugged into the USB ports.</li>
+                    <li><strong>Try Different Ports:</strong> Test using different USB ports (both USB 2.0 black and USB 3.0 blue).</li>
+                    <li><strong>Power:</strong> Some high-power peripherals might require a powered USB hub, especially if the Pi's power supply is borderline.</li>
+                    <li><strong>Compatibility:</strong> While rare, some specific keyboards/mice might have compatibility issues. Try a different set if possible.</li>
+                </ul>
+            </div>
+
+            <div class="card">
+                <h3>General Advice</h3>
+                <ul>
+                    <li><strong>Reboot:</strong> Sometimes a simple reboot fixes temporary glitches: <code>sudo reboot</code>.</li>
+                    <li><strong>Check Logs:</strong> System logs can provide clues. Use commands like <code>dmesg</code> or check files in <code>/var/log/</code>.</li>
+                    <li><strong>Official Documentation:</strong> The <a href="https://www.raspberrypi.org/documentation/" target="_blank" rel="noopener">official Raspberry Pi documentation</a> is excellent.</li>
+                    <li><strong>Community Forums:</strong> The <a href="https://forums.raspberrypi.com/" target="_blank" rel="noopener">Raspberry Pi forums</a> are a great place to ask for help.</li>
+                </ul>
+            </div>
+        </section>
+    </main>
+
+    <div class="back-to-top" aria-label="Back to top" role="button" tabindex="0">
+        <i class="fas fa-arrow-up" aria-hidden="true"></i>
+    </div>
+
+    <footer role="contentinfo">
+        <div class="container">
+            <p>&copy; 2023 Raspberry Pi Guide. Hosted on <a href="https://pages.github.com/" rel="noopener">GitHub Pages</a>.</p>
+        </div>
+    </footer>
+</body>
+</html>
